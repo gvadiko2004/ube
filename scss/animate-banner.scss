@@ -41,6 +41,10 @@
   display: flex;
   align-items: center;
 
+  @media (max-width: 440px) {
+    padding: 0 1rem;
+  }
+
   span {
     color: #000;
     text-align: center;

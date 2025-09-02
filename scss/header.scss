@@ -1,13 +1,19 @@
 .header {
   margin: 40px 0;
 
+  // position: absolute;
+
+  // left: 0;
+  // right: 0;
+  // width: 100%;
+
+  z-index: 11;
+
   position: absolute;
 
   left: 0;
   right: 0;
   width: 100%;
-
-  z-index: 11;
 
   @media (max-width: 1280px) {
     margin: 20px 0;

@@ -47,6 +47,14 @@ a {
   overflow-x: hidden;
 }
 
+main {
+  padding-top: 50px;
+
+  @media (max-width: 4400px) {
+    padding-top: 0px;
+  }
+}
+
 .list-reset {
   padding: 0;
   margin: 0;
@@ -76,8 +84,9 @@ a {
   max-width: 1480px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 
   @media (max-width: 440px) {
-    padding: 0 12px;
+    // padding: 0 12px;
   }
 }
