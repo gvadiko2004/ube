@@ -49,7 +49,7 @@
     align-items: center;
     gap: 42px;
     border-radius: 100px;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
     @media (max-width: 1280px) {
@@ -92,5 +92,29 @@
     &:hover {
       color: var(--g);
     }
+  }
+}
+
+.header__social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+}
+
+.header__social-link {
+  width: 46px;
+  height: 46px;
+
+  background-color: var(--g);
+  border-radius: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    color: #fff;
+    font-size: 20px;
   }
 }

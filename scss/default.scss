@@ -166,6 +166,10 @@
 
 section {
   margin-bottom: 100px;
+
+  @media (max-width: 440px) {
+    margin-bottom: 40px;
+  }
 }
 
 .sep {
@@ -189,12 +193,17 @@ section {
   align-items: flex-end;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (max-width: 440px) {
+  }
 
   h2 {
     color: #fff;
 
     /* --primary-fonts */
-    font-size: 74px;
+    font-size: clamp(2.625rem, 1.745rem + 3.2vw, 4.625rem);
     font-weight: 600;
     line-height: 104.054%; /*  */
     text-transform: uppercase;
@@ -204,12 +213,16 @@ section {
 
   p {
     color: #fff;
-    font-size: 18px;
+    font-size: clamp(1rem, 0.945rem + 0.2vw, 1.125rem);
     font-weight: 300;
     line-height: 144.444%; /*  */
 
     max-width: 420px;
     display: block;
     margin-left: auto;
+
+    @media (max-width: 440px) {
+      display: none;
+    }
   }
 }

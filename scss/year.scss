@@ -1,8 +1,11 @@
 .year {
   padding: 80px 0;
-  border-radius: 24px;
-  margin-top: 60px;
+  // border-radius: 24px;
   background-color: #fff;
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
 
   // .year__inner
 
@@ -16,6 +19,18 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+
+    @media (max-width: 1080px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 640px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   // .year__content-title
@@ -37,16 +52,22 @@
     gap: 100px;
     padding: 20px;
 
-    border-radius: 24px;
-    background: #f2f2f2;
+    @media (max-width: 440px) {
+      &:nth-child(4) {
+        order: 1;
+      }
+    }
 
-    border-radius: 12px;
+    // border-radius: 24px;
+    background: rgb(239, 239, 239);
+
+    // border-radius: 12px;
 
     .top {
       display: flex;
       justify-content: end;
 
-      color: #0ab557;
+      color: var(--g);
 
       span {
         font-size: 62px;
@@ -69,7 +90,7 @@
 }
 
 .year__content-item.green {
-  background: #0ab557 100%;
+  background: var(--g) 100%;
 
   .bottom {
     p {
