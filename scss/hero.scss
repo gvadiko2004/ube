@@ -32,18 +32,17 @@
     height: auto;
 
     margin-top: 80px;
-
   }
 
   @media (max-width: 440px) {
-    height: 670px;
+    height: 620px;
     // position: absolute;
     top: 0;
     margin-top: 0;
 
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 50px;
   }
 
   .start {
@@ -129,7 +128,7 @@
     line-height: 115%;
 
     @media (max-width: 440px) {
-      font-size: 40px;
+      font-size: 32px;
     }
 
     span {
@@ -145,7 +144,7 @@
       font-weight: 700;
 
       @media (max-width: 440px) {
-        font-size: 40px;
+        font-size: 32px;
       }
     }
   }
