@@ -605,7 +605,7 @@ section {
 }
 @media (max-width: 440px) {
   .hero__title {
-    font-size: 32px;
+    font-size: 42px;
   }
 }
 .hero__title span {
@@ -619,7 +619,7 @@ section {
 }
 @media (max-width: 440px) {
   .hero__title span {
-    font-size: 32px;
+    font-size: 42px;
   }
 }
 .hero__subtitle {
