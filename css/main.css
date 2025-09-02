@@ -440,6 +440,7 @@ section {
   margin-bottom: 0;
   position: relative;
   height: 84vh;
+  margin-top: 20px;
 }
 @media (max-width: 1440px) {
   .hero {
