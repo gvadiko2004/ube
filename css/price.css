@@ -1,0 +1,31 @@
+.price__blocks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.price__blocks_list-item {
+  background-color: red;
+}
+.price__blocks-title {
+  color: var(----primary-font, #222);
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 19px; /* 73.077% */
+}
+.price__blocks-subtitle {
+  color: var(----primary-font, #222);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px; /* 135.714% */
+}
+.price__blocks-count {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 135%; /*  */
+  color: #0ab557 100%;
+}

@@ -1,0 +1,27 @@
+.hero__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+.hero__list-item {
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 8px;
+  font-weight: 500;
+  border-radius: 100px;
+  border: 0.4px solid #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
