@@ -14,7 +14,7 @@
   // background-repeat: no-repeat;
 
   height: 84vh;
-  margin-top: 20px;
+  margin-top: 60px;
 
   @media (max-width: 1440px) {
     height: 700px;
@@ -38,11 +38,10 @@
     height: 620px;
     // position: absolute;
     top: 0;
-    margin-top: 0;
 
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 80px;
   }
 
   .start {
@@ -122,14 +121,10 @@
   &__title {
     color: #fff;
     font-family: "Unbounded";
-    font-size: clamp(2rem, 1.034rem + 3.51vw, 5.25rem);
+    font-size: clamp(2.625rem, 0.975rem + 6vw, 6.375rem);
     font-weight: 300;
     text-transform: uppercase;
     line-height: 115%;
-
-    @media (max-width: 440px) {
-      font-size: 36px;
-    }
 
     span {
       background: var(
@@ -140,12 +135,8 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: "Unbounded";
-      font-size: clamp(2rem, 1.034rem + 3.51vw, 5.25rem);
+      font-size: clamp(2.625rem, 0.975rem + 6vw, 6.375rem);
       font-weight: 700;
-
-      @media (max-width: 440px) {
-        font-size: 36px;
-      }
     }
   }
 
@@ -154,7 +145,7 @@
   &__subtitle {
     color: #fff;
     font-family: "Unbounded";
-    font-size: clamp(1rem, 0.926rem + 0.27vw, 1.25rem);
+    font-size: clamp(1.125rem, 0.96rem + 0.6vw, 1.5rem);
 
     font-weight: 100;
     line-height: 155%; /* 171.429% */

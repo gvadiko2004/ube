@@ -201,11 +201,12 @@ section {
 
   h2 {
     color: #fff;
+    font-family: "Unbounded";
 
     /* --primary-fonts */
     font-size: clamp(2.625rem, 1.745rem + 3.2vw, 4.625rem);
     font-weight: 600;
-    line-height: 104.054%; /*  */
+    line-height: 124.054%; /*  */
     text-transform: uppercase;
 
     max-width: 600px;

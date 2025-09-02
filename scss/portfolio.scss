@@ -41,8 +41,12 @@
   // .portfolio-blocks__content-img
 
   &__content-img {
-    height: 600px;
+    height: 500px;
     position: relative;
+
+    @media (max-width: 1440px) {
+      height: 500px;
+    }
 
     @media (max-width: 1280px) {
       height: 400px;
