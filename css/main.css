@@ -1018,11 +1018,6 @@ section {
   position: relative;
   background-color: #fff;
 }
-@media (max-width: 768px) {
-  .work__blocks-item {
-    padding: 12px;
-  }
-}
 .work__blocks-item .btn-work {
   border-top-left-radius: 14px;
   border-bottom-right-radius: 14px;
