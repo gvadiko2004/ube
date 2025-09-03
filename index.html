@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UBE.STUDIO - Розробка сайту</title>
+    <title>Розробка сайту</title>
 
     <link
       rel="stylesheet"
@@ -28,7 +28,14 @@
         <div class="container">
           <div class="header__inner">
             <a href="#!" class="header__logo">
-              <img src="./images/logo.png" alt="" />
+              <img src="./images/fav.svg" alt="" />
+
+              <div class="end">
+                <p class="header__logo-top">
+                  ube<span class="cup">.</span><span>studio</span>
+                </p>
+                <span class="header__logo-bottom"> We are working </span>
+              </div>
             </a>
 
             <ul class="header__list list-reset">
@@ -86,10 +93,6 @@
             </button>
           </div>
         </div>
-
-        <div class="header-menu">
-          <div class="header-menu-content"></div>
-        </div>
       </header>
 
       <main class="main">
@@ -124,8 +127,7 @@
                 </h1>
 
                 <p class="hero__subtitle">
-                  Створюємо сучасні сайти будь-якої складності: від лендінгів та
-                  візиток до каталогів і інтернет-магазинів для вашого бізнесу
+                  Сучасні сайти будь-якої складності для бізнесу від ube.studio
                 </p>
 
                 <!-- <div class="hero__user">
@@ -266,9 +268,8 @@
           <div class="container">
             <div class="why_inner">
               <div class="top--title">
-                <h2>
-                  Чому <br />
-                  ми
+                <h2 class="karaoke">
+                  <span>Чому ми</span>
                 </h2>
               </div>
 
@@ -407,21 +408,25 @@
           <div class="container">
             <div class="portfolio_inner">
               <div class="top--title">
-                <h2>
-                  наші <br />
-                  Остані кейси
+                <h2 class="karaoke">
+                  <span
+                    >наші <br />
+                    Остані кейси</span
+                  >
                 </h2>
-                <p>
-                  Предлагаем комплексные решения по веб-разработке, способные
-                  превзойти ваши ожидания и улучшить показатели бизнеса.
-                </p>
               </div>
 
               <div class="portfolio-blocks">
                 <div class="portfolio-blocks__content">
                   <a href="#!" class="portfolio-blocks__content-item">
                     <div class="portfolio-blocks__content-img">
-                      <img src="./images/por-1.jpg" alt="" />
+                      <div class="img-container">
+                        <img
+                          src="./images/por-1.jpg"
+                          class="parallax-img"
+                          alt=""
+                        />
+                      </div>
 
                       <button class="btn-reset btn-portfolio">
                         <svg
@@ -498,7 +503,13 @@
 
                   <a href="#!" class="portfolio-blocks__content-item">
                     <div class="portfolio-blocks__content-img">
-                      <img src="./images/por-2.jpg" alt="" />
+                      <div class="img-container">
+                        <img
+                          src="./images/por-2.jpg"
+                          class="parallax-img"
+                          alt=""
+                        />
+                      </div>
 
                       <button class="btn-reset btn-portfolio">
                         <svg
@@ -577,7 +588,13 @@
                 <div class="portfolio-blocks__content rewerse">
                   <a href="#!" class="portfolio-blocks__content-item">
                     <div class="portfolio-blocks__content-img">
-                      <img src="./images/por-3.jpg" alt="" />
+                      <div class="img-container">
+                        <img
+                          src="./images/por-3.jpg"
+                          class="parallax-img"
+                          alt=""
+                        />
+                      </div>
 
                       <button class="btn-reset btn-portfolio">
                         <svg
@@ -654,7 +671,13 @@
 
                   <a href="#!" class="portfolio-blocks__content-item">
                     <div class="portfolio-blocks__content-img">
-                      <img src="./images/por-4.jpg" alt="" />
+                      <div class="img-container">
+                        <img
+                          src="./images/por-4.jpg"
+                          class="parallax-img"
+                          alt=""
+                        />
+                      </div>
 
                       <button class="btn-reset btn-portfolio">
                         <svg
@@ -733,7 +756,13 @@
                 <div class="portfolio-blocks__content">
                   <a href="#!" class="portfolio-blocks__content-item">
                     <div class="portfolio-blocks__content-img">
-                      <img src="./images/por-5.jpg" alt="" />
+                      <div class="img-container">
+                        <img
+                          src="./images/por-5.jpg"
+                          class="parallax-img"
+                          alt=""
+                        />
+                      </div>
 
                       <button class="btn-reset btn-portfolio">
                         <svg
@@ -810,7 +839,13 @@
 
                   <a href="#!" class="portfolio-blocks__content-item">
                     <div class="portfolio-blocks__content-img">
-                      <img src="./images/por-6.jpg" alt="" />
+                      <div class="img-container">
+                        <img
+                          src="./images/por-6.jpg"
+                          class="parallax-img"
+                          alt=""
+                        />
+                      </div>
 
                       <button class="btn-reset btn-portfolio">
                         <svg
@@ -890,7 +925,7 @@
           </div>
         </section>
 
-        <section class="work">
+        <!-- <section class="work">
           <div class="container">
             <div class="work__inner">
               <div class="top--title">
@@ -1033,15 +1068,17 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <section class="price">
           <div class="container">
             <div class="price__inner">
               <div class="top--title">
-                <h2>
-                  Ціни <br />
-                  на розробку
+                <h2 class="karaoke">
+                  <span
+                    >Ціни <br />
+                    на розробку</span
+                  >
                 </h2>
               </div>
 
@@ -1844,17 +1881,14 @@
         <section class="banner">
           <div class="container">
             <div class="banner__inner">
-              <h2 class="banner__title">ПОЛУЧИТЕ СКИДКУ 10% НА УСЛУГИ</h2>
+              <h2 class="banner__title">ЗНИЖКА 10% НА ПОСЛУГИ</h2>
               <p class="banner__subtitle">
-                Свяжитесь с нами для бесплатной консультации и воспользуйтесь
-                возможностью обсудить свои идеи с экспертами по цифровизации.
-                Оставьте свой номер, и мы вам перезвоним
+                Безкоштовна консультація та знижка на старт — залиште номер, і
+                ми зв'яжемось з вами!
               </p>
-
-              <button class="btn-reset banner__disc">Залишити заявку!</button>
+              <button class="btn-reset banner__disc">Залишити заявку</button>
             </div>
-
-            <video src="./banner.mp4" autoplay loop playinline muted></video>
+            <video src="./banner.mp4" autoplay loop playsinline muted></video>
           </div>
         </section>
       </main>
@@ -1866,9 +1900,42 @@
       </footer> -->
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
+    <div class="prelaoder">
+      <div class="banter-loader">
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
 
+        <span class="word">Загрузка<span class="dots"></span></span>
+      </div>
+    </div>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/animation.js" defer></script>
+    <script src="./js/preloader.js" defer></script>
+    <script src="./js/portfolio.js" defer></script>
     <script src="./js/swiper-min.js"></script>
   </body>
 </html>

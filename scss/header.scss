@@ -31,6 +31,48 @@
   // .header__logo
 
   &__logo {
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @media (max-width: 440px) {
+      gap: 10px;
+    }
+
+    .end {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      @media (max-width: 440px) {
+        gap: 0;
+      }
+    }
+
+    .header__logo-top {
+      color: #fff;
+      font-size: clamp(1.125rem, 0.865rem + 0.95vw, 2rem);
+      font-weight: 600;
+      line-height: 28px; /* 93.333% */
+      text-transform: lowercase;
+
+      .cup {
+        color: var(--g);
+      }
+
+      span {
+        font-weight: 100;
+      }
+    }
+
+    .header__logo-bottom {
+      color: #fff;
+      font-weight: 100;
+      font-size: clamp(0.625rem, 0.588rem + 0.14vw, 0.75rem);
+    }
+
     img {
       @media (max-width: 440px) {
         width: 130px;
@@ -120,9 +162,11 @@
 
 .btn-open-menu {
   display: flex;
-  width: 50px;
+  width: 40px;
   flex-direction: column;
   gap: 10px;
+
+  display: none;
 
   @media (max-width: 1080px) {
     display: flex;

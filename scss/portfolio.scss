@@ -29,7 +29,7 @@
     }
 
     @media (max-width: 440px) {
-        gap: 42px;
+      gap: 42px;
     }
   }
 
@@ -43,6 +43,7 @@
   &__content-img {
     height: 500px;
     position: relative;
+    overflow: hidden;
 
     @media (max-width: 1440px) {
       height: 500px;
@@ -83,6 +84,10 @@
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 145%;
+
+    @media (max-width: 440px) {
+      font-size: 14px;
+    }
   }
 
   // .portfolio-blocks__content-list
@@ -161,9 +166,6 @@
     width: 60px;
     height: 60px;
     background-color: #fff;
-    border-radius: 100px;
-
-    border-radius: 100px;
   }
 
   &::before {

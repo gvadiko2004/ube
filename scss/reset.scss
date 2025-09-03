@@ -9,7 +9,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: var(--second-family);
-  transition: 0.2s ease-in-out;
+  // transition: 0.2s ease-in-out;
 }
 
 body {
@@ -89,3 +89,63 @@ main {
     padding: 0 12px;
   }
 }
+
+.hero__title .char {
+  display: inline-block;
+}
+.hero__title .char.space {
+  display: inline; /* пробелы остаются нормальными */
+}
+
+// parallax
+
+.parallax-img {
+  object-fit: cover;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.img-container {
+  height: 100%;
+}
+
+.simpleParallax {
+  height: 100% !important;
+}
+
+.img-container {
+  pointer-events: none;
+}
+
+.content__list {
+  transition: 0.3s ease-in-out;
+}
+
+.karaoke {
+  max-width: 100%;
+  hyphens: auto;
+}
+
+/* karaoke */
+
+.karaoke span {
+  background: linear-gradient(to right, var(--g) 50%, #fff 50%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-decoration-break: slice;
+  -webkit-box-decoration-break: slice;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.portfolio-blocks__content-list li {
+  background-color: transparent;
+}
+
+
+// button:hover, a:hover, li {
+//   transition: 0.3s ease-in-out;
+// }
