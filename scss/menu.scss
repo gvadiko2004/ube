@@ -1,0 +1,143 @@
+.menu {
+  .header__list {
+    display: none;
+  }
+
+  @media (max-width: 1080px) {
+    position: fixed !important;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #000;
+
+    width: 100%;
+    height: 100%;
+    z-index: 1111;
+
+    padding: 20px;
+    transition: 0.6s ease-in-out;
+
+    &.active {
+      left: 0;
+    }
+
+    .header__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: start;
+      padding: 0;
+
+      background: none;
+
+      &-link {
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  .header__list-link {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .header__social {
+    margin-bottom: 12px;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  .header-nav__info {
+    display: none;
+
+    @media (max-width: 1080px) {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+  &__top {
+    display: none;
+
+    @media (max-width: 1080px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .btn-close-menu {
+      width: 26px;
+      height: 26px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      span {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+
+        transform: rotate(45deg);
+
+        &:nth-child(2) {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &__info {
+    display: none;
+
+    @media (max-width: 1080px) {
+      display: flex;
+    }
+  }
+}
+
+.header-nav__info-mail {
+  color: #fff;
+  font-size: 22px;
+  color: var(--g);
+  margin-top: 12px;
+  display: block;
+}
+
+.header-nav__info-phone {
+  color: #fff;
+  font-size: 22px;
+}
+
+.btn-form {
+  background-color: var(--g);
+  padding: 20px;
+
+  color: #000;
+  background-color: var(--g);
+  text-align: center;
+
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.header-nav__info-address {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
