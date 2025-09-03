@@ -152,24 +152,13 @@ window.addEventListener("load", () => {
         }
       }
 
-      // Анимация букв bottom
+      // Анимация текста bottom (целиком)
       if (bottom) {
-        const text = bottom.textContent;
-        bottom.textContent = "";
-        text.split("").forEach((char) => {
-          const span = document.createElement("span");
-          span.textContent = char;
-          span.style.display = "inline-block";
-          span.style.opacity = 0;
-          bottom.appendChild(span);
-        });
-        bottom.querySelectorAll("span").forEach((span, i) => {
-          tl.to(
-            span,
-            { opacity: 1, y: 0, duration: 0.03, ease: "power1.out" },
-            i * 0.03
-          );
-        });
+        tl.fromTo(
+          bottom,
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }
+        );
       }
     });
 
