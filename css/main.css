@@ -3358,6 +3358,7 @@ section {
 }
 .user-form__list-btn {
   font-size: 14px;
+  pointer-events: none;
 }
 @media (max-width: 440px) {
   .user-form__list-btn {
