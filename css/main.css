@@ -954,6 +954,7 @@ section {
     font-size: 16px;
     line-height: 154%;
     margin-bottom: 10px;
+    margin-top: 14px !important;
   }
 }
 .hero__user {
@@ -986,6 +987,11 @@ section {
 }
 .hero .btn-green {
   margin-top: 42px;
+}
+@media (max-width: 440px) {
+  .hero .btn-green {
+    margin-top: 24px;
+  }
 }
 .hero__user-work {
   color: #fff;
