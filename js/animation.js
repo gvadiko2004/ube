@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   // --- ПАРАЛЛАКС ---
   const parallaxImages = document.querySelectorAll(".parallax-img");
   if (parallaxImages.length) {
