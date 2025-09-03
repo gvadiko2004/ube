@@ -230,5 +230,5 @@ window.addEventListener("load", () => {
         }
       );
     });
-  }, 100);
+  }, 200);
 });

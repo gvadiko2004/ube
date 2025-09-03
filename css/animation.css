@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* --- HEADER --- */
+.header {
+  opacity: 0;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+/* --- HERO --- */
+.hero__title {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.hero__subtitle {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.btn-green {
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.hero-bg {
+  opacity: 0;
+}
+
+/* --- BANNER --- */
+.animate-banner {
+  opacity: 0;
+  -webkit-transform: translateY(130px);
+          transform: translateY(130px);
+}
+
+/* --- WHY --- */
+.why,
+.why__item,
+.why__contact {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px); /* для why__contact можно override если нужно translateY(20px) */
+}
+
+/* --- YEAR --- */
+.year__content-item .top span {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.year__content-item .bottom p span {
+  opacity: 0;
+  -webkit-transform: translateY(0);
+          transform: translateY(0); /* GSAP управляет каждой буквой через fromTo */
+  display: inline-block;
+}
+
+/* --- PORTFOLIO --- */
+.portfolio-blocks__content-item {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.portfolio-blocks__content-title,
+.portfolio-blocks__content-subtitle,
+.portfolio-blocks__content-list {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+/* --- PRICE --- */
+.price__blocks-item {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+/* --- FORM --- */
+.form__content,
+.form-input {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
