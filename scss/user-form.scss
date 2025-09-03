@@ -399,6 +399,8 @@
   margin-top: 32px;
   transition: 0.2s ease-in-out;
 
+  white-space: nowrap;
+
   @media (max-width: 440px) {
     width: 100%;
     justify-content: space-between;
