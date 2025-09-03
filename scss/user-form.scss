@@ -318,6 +318,11 @@
   margin-top: 12px;
   margin-bottom: 16px;
   display: block;
+
+  @media (max-width: 440px) {
+    margin-top: 22px;
+    margin-bottom: 14px;
+  }
 }
 
 .inpt__title {

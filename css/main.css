@@ -3587,6 +3587,12 @@ section {
   margin-bottom: 16px;
   display: block;
 }
+@media (max-width: 440px) {
+  .user-form--title {
+    margin-top: 22px;
+    margin-bottom: 14px;
+  }
+}
 
 .inpt__title {
   color: #000;
