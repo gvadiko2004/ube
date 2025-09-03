@@ -3319,6 +3319,7 @@ section {
 @media (max-width: 440px) {
   .user-form {
     margin-top: 100px;
+    margin-bottom: 0;
   }
 }
 .user-form .end-form {
