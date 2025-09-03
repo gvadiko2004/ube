@@ -1,0 +1,109 @@
+/* Style for the main FAQ container */
+.faq-container {
+  color: #333; /* Base text color */
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @media (max-width: 440px) {
+    margin-top: 30px;
+  }
+}
+
+/* Style for the main title */
+.faq-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2c3e50; /* Dark blue color for the title */
+}
+
+/* Style for each FAQ item */
+.faq-item {
+  border-bottom: 1px solid #ddd; /* Light gray border between items */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Style for the question buttons */
+.faq-question {
+  background-color: #ecf0f1; /* Light gray background */
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.4s ease-in-out; /* Smooth background transition on hover */
+
+  @media (max-width: 440px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 440px) {
+    padding: 12px;
+    gap: 12px;
+  }
+}
+
+/* Hover effect for question buttons */
+.faq-question:hover {
+  background-color: #d0d7de; /* Slightly darker gray on hover */
+}
+
+/* Style for the arrow icon */
+.faq-question .arrow {
+  position: absolute;
+  right: 20px;
+  transition: transform 0.4s ease-in-out; /* Smooth rotation transition */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Rotate the arrow when the question is active (expanded) */
+.faq-question.active .arrow {
+  transform: rotate(180deg); /* Rotate arrow 180 degrees */
+}
+
+/* Style for the answer sections */
+.faq-answer {
+  max-height: 0; /* Initially hide the answer */
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out; /* Smooth transition for expanding */
+  background-color: #fff; /* White background for answers */
+}
+
+/* Style for the answer text */
+.faq-answer p {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5; /* Increase-in-out line height for better readability */
+  color: #555; /* Slightly lighter text color for answers */
+
+  @media (max-width: 440px) {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+.arrow {
+  background-color: transparent;
+
+  @media (max-width: 440px) {
+    width: 10px;
+    height: 10px;
+    position: static !important;
+  }
+}
+
+.faq-question {
+  @media (max-width: 440px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+}

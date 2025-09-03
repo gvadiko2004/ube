@@ -31,7 +31,6 @@
   // .header__logo
 
   &__logo {
-    width: 100px;
 
     display: flex;
     align-items: center;
@@ -74,9 +73,7 @@
     }
 
     img {
-      @media (max-width: 440px) {
-        width: 130px;
-      }
+      
     }
   }
 
