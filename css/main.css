@@ -3340,7 +3340,7 @@ section {
 }
 @media (max-width: 440px) {
   .user-form {
-    margin-top: 100px;
+    margin-top: 30px;
     margin-bottom: 0;
   }
 }
@@ -3400,8 +3400,8 @@ section {
 }
 @media (max-width: 440px) {
   .user-form__info {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .user-form__info-title {
