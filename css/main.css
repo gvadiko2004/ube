@@ -795,7 +795,7 @@ section {
 }
 @media (max-width: 440px) {
   .footer-nav__list {
-    gap: 10px;
+    gap: 8px;
   }
 }
 .footer-nav__list-link {
