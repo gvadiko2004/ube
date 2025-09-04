@@ -27,3 +27,9 @@
 .hero-bg {
   opacity: 0;
 }
+
+.animate-banner {
+  opacity: 0;
+  -webkit-transform: translateY(130px);
+          transform: translateY(130px);
+}
