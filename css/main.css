@@ -4506,6 +4506,7 @@ section {
   .team-user__blocks {
     gap: 12px;
     margin-top: 30px;
+    row-gap: 28px;
   }
 }
 .team-user__blocks-img img {

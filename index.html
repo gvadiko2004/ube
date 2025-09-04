@@ -65,7 +65,7 @@
                   </a>
                 </li>
 
-                <li class="header__list-item open-menu">
+                <!-- <li class="header__list-item open-menu">
                   <a href="#!" class="header__list-link">
                     <span>Галузі</span>
 
@@ -81,18 +81,22 @@
                       </svg>
                     </div>
                   </a>
+                </li> -->
+
+                <li class="header__list-item menu-remove-item">
+                  <a href="#portfolio" class="header__list-link"
+                    >Наші проекти</a
+                  >
                 </li>
 
-                <li class="header__list-item">
-                  <a href="#!" class="header__list-link">Наші проекти</a>
+                <li class="header__list-item menu-remove-item">
+                  <a href="./team.html#team-user" class="header__list-link"
+                    >Команда</a
+                  >
                 </li>
 
-                <li class="header__list-item">
-                  <a href="./team.html" class="header__list-link">Команда</a>
-                </li>
-
-                <li class="header__list-item">
-                  <a href="#!" class="header__list-link">Контакты</a>
+                <li class="header__list-item menu-remove-item">
+                  <a href="./form.html" class="header__list-link">Контакти</a>
                 </li>
               </ul>
             </div>
@@ -225,7 +229,7 @@
                   </div>
                 </li>
 
-                <li class="header__list-item">
+                <!-- <li class="header__list-item">
                   <a href="#!" class="header__list-link">
                     <span>Галузі</span>
 
@@ -310,18 +314,22 @@
                       </li>
                     </ul>
                   </div>
+                </li> -->
+
+                <li class="header__list-item menu-remove-item menu-remove-item">
+                  <a href="#portfolio" class="header__list-link"
+                    >Наші проекти</a
+                  >
                 </li>
 
-                <li class="header__list-item">
-                  <a href="#!" class="header__list-link">Наші проекти</a>
+                <li class="header__list-item menu-remove-item menu-remove-item">
+                  <a href="./team.html#team-user" class="header__list-link"
+                    >Команда</a
+                  >
                 </li>
 
-                <li class="header__list-item">
-                  <a href="./team.html" class="header__list-link">Команда</a>
-                </li>
-
-                <li class="header__list-item">
-                  <a href="#!" class="header__list-link">Контакты</a>
+                <li class="header__list-item menu-remove-item menu-remove-item">
+                  <a href="./form.html" class="header__list-link">Контакти</a>
                 </li>
               </ul>
 
@@ -645,7 +653,7 @@
           </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
           <div class="container">
             <div class="portfolio_inner">
               <div class="top--title">
@@ -2421,7 +2429,7 @@
                 </ul>
               </div>
 
-              <div class="footer-nav">
+              <!-- <div class="footer-nav">
                 <h4 class="footer-nav__title">Галузі</h4>
 
                 <ul class="footer-nav__list list-reset">
@@ -2483,7 +2491,7 @@
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
 
             <div class="footer-bottom">
@@ -2504,19 +2512,21 @@
 
               <ul class="footer__list list-reset">
                 <li class="footer__list-item">
-                  <a href="#!" class="footer__list-link"> Проект </a>
+                  <a href="#portfolio" class="footer__list-link"> Проекти </a>
                 </li>
 
-                <li class="footer__list-item">
+                <!-- <li class="footer__list-item">
                   <a href="#!" class="footer__list-link"> Галузі </a>
+                </li> -->
+
+                <li class="footer__list-item">
+                  <a href="./team.html#team-user" class="footer__list-link">
+                    Команда
+                  </a>
                 </li>
 
                 <li class="footer__list-item">
-                  <a href="./team.html" class="footer__list-link"> Команда </a>
-                </li>
-
-                <li class="footer__list-item">
-                  <a href="#!" class="footer__list-link"> Контакты </a>
+                  <a href="./form.html" class="footer__list-link"> Контакти </a>
                 </li>
 
                 <li class="footer__list-item">
@@ -2650,5 +2660,17 @@
     <script src="./js/preloader.js" defer></script>
     <script src="./js/portfolio.js" defer></script>
     <script src="./js/swiper-min.js"></script>
+
+    <script>
+      const menuRemoveItems = document.querySelectorAll(".menu-remove-item");
+
+      menuRemoveItems.forEach((removeItem) => {
+        removeItem.addEventListener("click", function () {
+          document.querySelectorAll(".active").forEach((el) => {
+            el.classList.remove("active");
+          });
+        });
+      });
+    </script>
   </body>
 </html>

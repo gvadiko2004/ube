@@ -53,6 +53,10 @@ btnOpenMenu.addEventListener("click", function () {
 });
 
 btnCloseMenu.addEventListener("click", function () {
+  document.body.style.overflow = "visible";
+});
+
+btnCloseMenu.addEventListener("click", function () {
   menu.classList.remove("active");
 });
 
@@ -151,4 +155,3 @@ btnOpenForm.forEach((btn) => {
 btnCloseForm.addEventListener("click", () => {
   contactForm.classList.remove("active");
 });
-
