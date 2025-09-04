@@ -83,12 +83,6 @@ main {
   padding: 0 20px;
   width: 100%;
 }
-@media (max-width: 440px) {
-  .container {
-    padding: 0 12px;
-  }
-}
-
 .hero__title .char {
   display: inline-block;
 }
@@ -3865,7 +3859,6 @@ section {
 }
 .menu .header-nav {
   padding: 0;
-  padding-bottom: 30px;
   overflow: auto;
 }
 .menu .header__list {
@@ -4088,7 +4081,8 @@ section {
 
 @media (max-width: 1080px) {
   .header .menu {
-    display: none;
+    -webkit-transition: 0.6s ease-in-out !important;
+    transition: 0.6s ease-in-out !important;
     position: fixed !important;
     top: 0;
     left: 0;
@@ -4098,9 +4092,10 @@ section {
     height: 100%;
     padding: 20px 0;
     overflow: auto;
+    left: 100%;
   }
   .header .menu.active {
-    display: block;
+    left: 0;
   }
 }
 

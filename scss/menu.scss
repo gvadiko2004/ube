@@ -90,7 +90,6 @@
 
   .header-nav {
     padding: 0;
-    padding-bottom: 30px;
     overflow: auto;
   }
 
@@ -297,7 +296,7 @@
 .header {
   .menu {
     @media (max-width: 1080px) {
-      display: none;
+      transition: 0.6s ease-in-out !important;
 
       position: fixed !important;
       top: 0;
@@ -310,9 +309,10 @@
 
       padding: 20px 0;
       overflow: auto;
+      left: 100%;
 
       &.active {
-        display: block;
+        left: 0;
       }
     }
   }
