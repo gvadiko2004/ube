@@ -3921,6 +3921,11 @@ section {
     gap: 12px;
   }
 }
+@media (max-width: 440px) {
+  .menu .header-nav .header-nav__info {
+    margin-top: 12px;
+  }
+}
 .menu .header-nav__top {
   display: none;
 }

@@ -131,6 +131,10 @@
         flex-direction: column;
         gap: 12px;
       }
+
+      @media (max-width: 440px) {
+        margin-top: 12px;
+      }
     }
     &__top {
       display: none;
