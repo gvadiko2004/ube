@@ -11,14 +11,14 @@ window.addEventListener("load", () => {
     }
 
     // --- HEADER ---
-    const header = document.querySelector(".header");
-    if (header) {
-      gsap.fromTo(
-        header,
-        { y: -50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
-      );
-    }
+    // const header = document.querySelector(".header");
+    // if (header) {
+    //   gsap.fromTo(
+    //     header,
+    //     { y: -50, opacity: 0 },
+    //     { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
+    //   );
+    // }
 
     // --- HERO ---
     const title = document.querySelector(".hero__title");
