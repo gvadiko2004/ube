@@ -152,6 +152,61 @@ span {
   background-color: transparent;
 }
 
+.upload-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+}
+
+.file-label {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.file-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  background: #f3f3f3;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px dashed #4caf50;
+  font-size: 14px;
+  color: #000;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media (max-width: 440px) {
+  .file-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+.file-btn:hover {
+  background: #e6f7e6;
+}
+
+.file-btn svg {
+  fill: #4caf50;
+}
+
 .btn-white {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4663,6 +4718,7 @@ section {
 @media (max-width: 440px) {
   .form-input form {
     padding: 20px;
+    gap: 26px;
   }
 }
 .form-input__input {

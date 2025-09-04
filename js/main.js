@@ -155,3 +155,16 @@ btnOpenForm.forEach((btn) => {
 btnCloseForm.addEventListener("click", () => {
   contactForm.classList.remove("active");
 });
+
+// BULK
+
+document.querySelectorAll(".file-input").forEach((input) => {
+  input.addEventListener("change", function () {
+    const fileText = this.closest(".file-label").querySelector(".file-text");
+    if (this.files && this.files.length > 0) {
+      fileText.textContent = this.files[0].name; // показываем имя файла
+    } else {
+      fileText.textContent = "Прикрепить файл"; // если сбросили
+    }
+  });
+});
