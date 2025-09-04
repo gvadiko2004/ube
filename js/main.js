@@ -55,7 +55,6 @@ btnCloseMenu.addEventListener("click", function () {
   menu.classList.remove("active");
 });
 
-
 itemMenu.forEach((link) => {
   const dropdown = link.querySelector(".header__list_container");
   const icon = link.querySelector(".icon");
@@ -85,7 +84,6 @@ itemMenu.forEach((link) => {
     });
   }
 });
-
 
 // faq
 
@@ -119,4 +117,36 @@ faqQuestions.forEach((question) => {
       answer.style.maxHeight = answer.scrollHeight + "px";
     }
   });
+});
+
+// .contact-form-overlay
+
+const contactForm = document.querySelector(".contact-form-overlay");
+const btnCloseForm = document.querySelector(".btn-close-contact-form");
+const potrSpan = contactForm.querySelector(".potr span");
+
+// Находим все кнопки открытия формы
+const btnOpenForm = document.querySelectorAll(".btn-open-form");
+
+btnOpenForm.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // Находим родительский блок .price__blocks-item для этой кнопки
+    const parentBlock = btn.closest(".price__blocks-item");
+    if (!parentBlock) return;
+
+    // Берем текст из h3.price__blocks-title
+    const titleElement = parentBlock.querySelector(".price__blocks-title");
+    const value = titleElement ? titleElement.textContent.trim() : "послуга";
+
+    // Вставляем значение в span
+    potrSpan.textContent = value;
+
+    // Показываем форму
+    contactForm.classList.add("active");
+  });
+});
+
+// Закрытие формы
+btnCloseForm.addEventListener("click", () => {
+  contactForm.classList.remove("active");
 });
