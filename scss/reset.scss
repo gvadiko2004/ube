@@ -123,6 +123,12 @@ main {
   transition: 0.3s ease-in-out;
 }
 
+button:hover,
+a:hover,
+span {
+  transition: 0.3s ease-in-out;
+}
+
 .karaoke {
   max-width: 100%;
   hyphens: auto;
@@ -140,11 +146,9 @@ main {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-
 .portfolio-blocks__content-list li {
   background-color: transparent;
 }
-
 
 // button:hover, a:hover, li {
 //   transition: 0.3s ease-in-out;

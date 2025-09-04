@@ -131,7 +131,7 @@
     font-weight: 300;
 
     &:hover {
-      color: var(--g);
+      color: var(--g) !important;
     }
   }
 }

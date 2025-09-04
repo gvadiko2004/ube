@@ -81,8 +81,8 @@
     font-size: clamp(1rem, 0.89rem + 0.4vw, 1.25rem);
     font-weight: 400;
 
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 24px;
     line-height: 145%;
 
     @media (max-width: 440px) {
@@ -117,7 +117,6 @@
     font-size: 16px;
     font-weight: 400;
 
-    border-radius: 100px;
     border: 0.4px solid #fff;
 
     padding: 6px 12px;
@@ -184,10 +183,13 @@
   }
 }
 
-.portfolio-blocks__content-item:hover {
-  .content__list {
-    pointer-events: all;
-    opacity: 1;
-    visibility: visible;
+@media (min-width: 1280px) {
+  .portfolio-blocks__content-item:hover {
+    .content__list {
+      pointer-events: all;
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
+

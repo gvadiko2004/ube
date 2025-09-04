@@ -1,5 +1,12 @@
 .menu {
+  .header-nav {
+    padding: 20px;
+    padding-bottom: 30px;
+    overflow: auto;
+  }
+
   .header__list {
+    padding-bottom: 40px;
     display: none;
   }
 
@@ -15,7 +22,6 @@
     height: 100%;
     z-index: 1111;
 
-    padding: 20px;
     transition: 0.6s ease-in-out;
 
     &.active {
@@ -25,15 +31,50 @@
     .header__list {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 0;
       align-items: start;
       padding: 0;
 
+      padding: 20px 0 50px 0;
+
       background: none;
+
+      .header__list-item {
+        width: 100%;
+
+        padding: 26px 0;
+        border-bottom: 1px solid #ffffff4d;
+
+        a {
+          width: 100%;
+          display: block;
+
+          text-align: left;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .icon {
+            padding: 0 4px 0 0;
+            svg {
+              height: 10px;
+              width: 10px;
+            }
+          }
+        }
+      }
 
       &-link {
         color: #fff;
         font-size: 20px;
+
+        width: 100%;
+
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
       }
     }
   }
@@ -79,8 +120,8 @@
     }
 
     .btn-close-menu {
-      width: 26px;
-      height: 26px;
+      width: 22px;
+      height: 22px;
 
       display: flex;
       flex-direction: column;
@@ -112,7 +153,7 @@
 
 .header-nav__info-mail {
   color: #fff;
-  font-size: 22px;
+  font-size: 16px;
   color: var(--g);
   margin-top: 12px;
   display: block;
@@ -120,7 +161,7 @@
 
 .header-nav__info-phone {
   color: #fff;
-  font-size: 22px;
+  font-size: 14px;
 }
 
 .btn-form {
@@ -140,4 +181,43 @@
   font-size: 14px;
   color: #fff;
   font-weight: 500;
+}
+
+.header__list_container {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease;
+}
+
+.header__list-item {
+  .icon {
+    transition: 0.4s ease-in-out;
+    &.active {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.header__list_container {
+  .footer-nav__list {
+    padding-top: 26px;
+  }
+
+  .footer-nav__list-link {
+    border: none !important;
+    padding: 0 !important;
+  }
+}
+
+.footer-nav--title {
+  font-size: 12px;
+  color: #ffffff66;
+  font-weight: 300;
+  margin-top: 26px;
+}
+
+.header__list_container.seps {
+  .footer-nav__list {
+    padding-top: 14px;
+  }
 }

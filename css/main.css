@@ -123,6 +123,13 @@ main {
   transition: 0.3s ease-in-out;
 }
 
+button:hover,
+a:hover,
+span {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 .karaoke {
   max-width: 100%;
   -ms-hyphens: auto;
@@ -517,7 +524,7 @@ section {
   font-weight: 300;
 }
 .header__list-link:hover {
-  color: var(--g);
+  color: var(--g) !important;
 }
 
 .header__social {
@@ -1759,8 +1766,8 @@ section {
   color: #fff;
   font-size: clamp(1rem, 0.89rem + 0.4vw, 1.25rem);
   font-weight: 400;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 24px;
   line-height: 145%;
 }
 @media (max-width: 440px) {
@@ -1798,7 +1805,6 @@ section {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
-  border-radius: 100px;
   border: 0.4px solid #fff;
   padding: 6px 12px;
   gap: 10px;
@@ -1857,12 +1863,13 @@ section {
   opacity: 0.6;
 }
 
-.portfolio-blocks__content-item:hover .content__list {
-  pointer-events: all;
-  opacity: 1;
-  visibility: visible;
+@media (min-width: 1280px) {
+  .portfolio-blocks__content-item:hover .content__list {
+    pointer-events: all;
+    opacity: 1;
+    visibility: visible;
+  }
 }
-
 .why {
   padding: 80px 0 0 0;
 }
@@ -3407,9 +3414,9 @@ section {
   color: var(----gradient, #75bb0d);
 }
 .user-form__info-subtitle {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7843137255);
   font-size: clamp(1.25rem, 1.14rem + 0.4vw, 1.5rem);
-  font-weight: 400;
+  font-weight: 200;
   margin-top: 20px;
   margin-bottom: 34px;
   line-height: 145%;
@@ -3631,29 +3638,29 @@ section {
   width: 100%;
 }
 .inpt__blocks input::-webkit-input-placeholder {
-  color: #808080;
+  color: #565656;
   font-size: clamp(0.875rem, 0.82rem + 0.2vw, 1rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 .inpt__blocks input::-moz-placeholder {
-  color: #808080;
+  color: #565656;
   font-size: clamp(0.875rem, 0.82rem + 0.2vw, 1rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 .inpt__blocks input:-ms-input-placeholder {
-  color: #808080;
+  color: #565656;
   font-size: clamp(0.875rem, 0.82rem + 0.2vw, 1rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 .inpt__blocks input::-ms-input-placeholder {
-  color: #808080;
+  color: #565656;
   font-size: clamp(0.875rem, 0.82rem + 0.2vw, 1rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 .inpt__blocks input::placeholder {
-  color: #808080;
+  color: #565656;
   font-size: clamp(0.875rem, 0.82rem + 0.2vw, 1rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .inpt__input-title {
@@ -3680,29 +3687,29 @@ section {
   }
 }
 .inpt__block textarea::-webkit-input-placeholder {
-  color: #808080;
+  color: #565656;
   font-size: clamp(0.875rem, 0.82rem + 0.2vw, 1rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 .inpt__block textarea::-moz-placeholder {
-  color: #808080;
+  color: #565656;
   font-size: clamp(0.875rem, 0.82rem + 0.2vw, 1rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 .inpt__block textarea:-ms-input-placeholder {
-  color: #808080;
+  color: #565656;
   font-size: clamp(0.875rem, 0.82rem + 0.2vw, 1rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 .inpt__block textarea::-ms-input-placeholder {
-  color: #808080;
+  color: #565656;
   font-size: clamp(0.875rem, 0.82rem + 0.2vw, 1rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 .inpt__block textarea::placeholder {
-  color: #808080;
+  color: #565656;
   font-size: clamp(0.875rem, 0.82rem + 0.2vw, 1rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .btn-send-user-form {
@@ -3753,7 +3760,13 @@ section {
   }
 }
 
+.menu .header-nav {
+  padding: 20px;
+  padding-bottom: 30px;
+  overflow: auto;
+}
 .menu .header__list {
+  padding-bottom: 40px;
   display: none;
 }
 @media (max-width: 1080px) {
@@ -3767,7 +3780,6 @@ section {
     width: 100%;
     height: 100%;
     z-index: 1111;
-    padding: 20px;
     -webkit-transition: 0.6s ease-in-out;
     transition: 0.6s ease-in-out;
   }
@@ -3782,16 +3794,47 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 20px;
+    gap: 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
     padding: 0;
+    padding: 20px 0 50px 0;
     background: none;
+  }
+  .menu .header__list .header__list-item {
+    width: 100%;
+    padding: 26px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3019607843);
+  }
+  .menu .header__list .header__list-item a {
+    width: 100%;
+    display: block;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu .header__list .header__list-item a .icon {
+    padding: 0 4px 0 0;
+  }
+  .menu .header__list .header__list-item a .icon svg {
+    height: 10px;
+    width: 10px;
   }
   .menu .header__list-link {
     color: #fff;
     font-size: 20px;
+    width: 100%;
+  }
+  .menu .header__list-link svg path {
+    fill: #fff;
   }
 }
 
@@ -3851,8 +3894,8 @@ section {
   }
 }
 .header-nav__top .btn-close-menu {
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3889,7 +3932,7 @@ section {
 
 .header-nav__info-mail {
   color: #fff;
-  font-size: 22px;
+  font-size: 16px;
   color: var(--g);
   margin-top: 12px;
   display: block;
@@ -3897,7 +3940,7 @@ section {
 
 .header-nav__info-phone {
   color: #fff;
-  font-size: 22px;
+  font-size: 14px;
 }
 
 .btn-form {
@@ -3915,6 +3958,41 @@ section {
   font-size: 14px;
   color: #fff;
   font-weight: 500;
+}
+
+.header__list_container {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.4s ease;
+  transition: height 0.4s ease;
+}
+
+.header__list-item .icon {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.header__list-item .icon.active {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.header__list_container .footer-nav__list {
+  padding-top: 26px;
+}
+.header__list_container .footer-nav__list-link {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.footer-nav--title {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300;
+  margin-top: 26px;
+}
+
+.header__list_container.seps .footer-nav__list {
+  padding-top: 14px;
 }
 
 /* Style for the main FAQ container */

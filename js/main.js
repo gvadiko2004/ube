@@ -25,6 +25,28 @@ const menu = document.querySelector(".menu");
 const btnOpenMenu = document.querySelector(".btn-open-menu");
 const btnCloseMenu = document.querySelector(".btn-close-menu");
 
+const itemMenu = menu.querySelectorAll(".header__list-item");
+const itemMenuIcon = menu.querySelectorAll(".header__list-item .icon");
+
+itemMenu.forEach((link) => {
+  const dropdown = link.querySelector(".header__list_container"); // ищем внутри текущего пункта меню
+
+  if (dropdown) {
+    link.addEventListener("click", function () {
+      // закрываем все dropdown
+      itemMenu.forEach((item) => {
+        const dd = item.querySelector(".header__list_container");
+        if (dd && dd !== dropdown) {
+          dd.classList.remove("active");
+        }
+      });
+
+      // открываем/закрываем текущий
+      dropdown.classList.toggle("active");
+    });
+  }
+});
+
 btnOpenMenu.addEventListener("click", function () {
   menu.classList.add("active");
 });
@@ -32,6 +54,38 @@ btnOpenMenu.addEventListener("click", function () {
 btnCloseMenu.addEventListener("click", function () {
   menu.classList.remove("active");
 });
+
+
+itemMenu.forEach((link) => {
+  const dropdown = link.querySelector(".header__list_container");
+  const icon = link.querySelector(".icon");
+
+  if (dropdown) {
+    link.addEventListener("click", function () {
+      // закрываем все остальные
+      itemMenu.forEach((item) => {
+        const dd = item.querySelector(".header__list_container");
+        const ic = item.querySelector(".icon");
+        if (dd && dd !== dropdown) {
+          dd.style.height = "0";
+        }
+        if (ic && ic !== icon) {
+          ic.classList.remove("active");
+        }
+      });
+
+      // открываем/закрываем текущий
+      if (dropdown.style.height && dropdown.style.height !== "0px") {
+        dropdown.style.height = "0";
+      } else {
+        dropdown.style.height = dropdown.scrollHeight + "px";
+      }
+
+      if (icon) icon.classList.toggle("active");
+    });
+  }
+});
+
 
 // faq
 
