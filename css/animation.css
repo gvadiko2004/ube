@@ -60,16 +60,12 @@
   opacity: 0;
   -webkit-transform: scale(0.8);
           transform: scale(0.8); /* соответствует scale:0.8 в fromTo */
-  -webkit-transition: none;
-  transition: none;
 }
 
 /* Исходное состояние заголовка и текста */
 .our-plus__blocks-title,
 .our-plus__blocks-subtitle {
   opacity: 0;
-  -webkit-transition: none;
-  transition: none;
 }
 
 /* Исходное состояние блоков */
@@ -77,21 +73,15 @@
   opacity: 0;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
-  -webkit-transition: none;
-  transition: none;
 }
 
 .team-user__blocks-img img {
   opacity: 0;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  -webkit-transition: none;
-  transition: none;
 }
 
 .team-user__blocks-name,
 .team-user__blocks-dev {
   opacity: 0;
-  -webkit-transition: none;
-  transition: none;
 }

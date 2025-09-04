@@ -251,40 +251,5 @@ window.addEventListener("load", () => {
         toggleActions: "play none none none", // проиграть один раз
       },
     });
-
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Анимация поочередного появления блоков
-    gsap.utils.toArray(".our-plus__blocks-item").forEach((item, i) => {
-      const icon = item.querySelector(".our-plus__blocks-icon img");
-      const title = item.querySelector(".our-plus__blocks-title");
-      const subtitle = item.querySelector(".our-plus__blocks-subtitle");
-
-      // Анимация иконки
-      gsap.to(icon, {
-        opacity: 1,
-        scale: 1,
-        duration: 0.8,
-        ease: "back.out(1.7)",
-        scrollTrigger: {
-          trigger: item,
-          start: "top 85%",
-          toggleActions: "play none none none",
-        },
-      });
-
-      // Анимация заголовка и текста
-      gsap.to([title, subtitle], {
-        opacity: 1,
-        duration: 0.8,
-        ease: "power2.out",
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: item,
-          start: "top 85%",
-          toggleActions: "play none none none",
-        },
-      });
-    });
   }, 200);
 });

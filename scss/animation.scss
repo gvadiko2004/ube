@@ -52,14 +52,12 @@
 .our-plus__blocks-icon img {
   opacity: 0;
   transform: scale(0.8); /* соответствует scale:0.8 в fromTo */
-  transition: none;
 }
 
 /* Исходное состояние заголовка и текста */
 .our-plus__blocks-title,
 .our-plus__blocks-subtitle {
   opacity: 0;
-  transition: none;
 }
 
 //
@@ -68,17 +66,14 @@
 .team-user__blocks-user {
   opacity: 0;
   transform: translateY(50px);
-  transition: none;
 }
 
 .team-user__blocks-img img {
   opacity: 0;
   transform: scale(0.8);
-  transition: none;
 }
 
 .team-user__blocks-name,
 .team-user__blocks-dev {
   opacity: 0;
-  transition: none;
 }
