@@ -30,6 +30,10 @@
       line-height: 124%;
 
       margin: 14px 0 10px 0;
+
+      @media (max-width: 440px) {
+        margin: 14px 0 6px 0;
+      }
     }
 
     &-dev {

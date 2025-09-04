@@ -4519,6 +4519,11 @@ section {
   line-height: 124%;
   margin: 14px 0 10px 0;
 }
+@media (max-width: 440px) {
+  .team-user__blocks-name {
+    margin: 14px 0 6px 0;
+  }
+}
 .team-user__blocks-dev {
   color: #fff;
   font-size: clamp(0.75rem, 0.695rem + 0.2vw, 0.875rem);
