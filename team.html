@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Розробка сайту</title>
 
-    <link rel="shortcut icon" href="./images/fav.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
@@ -14,6 +19,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="shortcut icon" href="./images/fav.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <style>
+      .form {
+        margin-bottom: 0;
+      }
+    </style>
   </head>
 
   <body>
@@ -363,209 +382,350 @@
       </header>
 
       <main class="main">
-        <section class="user-form">
+        <section class="team">
           <div class="container">
-            <div class="user-form__inner">
-              <div class="start">
-                <div class="user-form__info">
-                  <div class="top">
-                    <h2 class="user-form__info-title">
-                      Почати проект<br />
-                      разом із <br /><span>ube</span
-                      ><span class="dot">.</span>studio
-                    </h2>
+            <div class="team__inner">
+              <h2 class="team__title">
+                ВАШ НАДІЙНИЙ ПАРТНЕР ДО ШЛЯХУ ВІРНОГО БІЗНЕСУ
+              </h2>
 
-                    <p class="user-form__info-subtitle">
-                      Заповніть дані про себе та проект, наш менеджер зв'яжеться
-                      з вами протягом двох робочих днів
-                    </p>
+              <div class="img-container">
+                <img
+                  loading="lazy"
+                  src="./images/team.jpg"
+                  class="parallax-img"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="our-plus">
+          <div class="container">
+            <div class="plus__inner">
+              <div class="top--title">
+                <h2 class="karaoke">
+                  <span
+                    >Наші <br />
+                    цінності</span
+                  >
+                </h2>
+              </div>
+
+              <div class="our-plus__blocks">
+                <div class="our-plus__blocks-item">
+                  <div class="our-plus__blocks-icon">
+                    <img src="./images/m1.png" alt="" />
                   </div>
 
-                  <div class="user-form__me">
-                    <div class="start">
-                      <div class="user-form__me-img">
-                        <img src="./images/achie.png" alt="" />
-                      </div>
+                  <h4 class="our-plus__blocks-title">
+                    Робимо сайти, які працюють на вас
+                  </h4>
+
+                  <p class="our-plus__blocks-subtitle">
+                    Ми не женемося за красою заради краси. Кожен сайт має
+                    приносити результат — продажі, клієнтів чи впізнаваність
+                    бренду.
+                  </p>
+                </div>
+
+                <div class="our-plus__blocks-item">
+                  <div class="our-plus__blocks-icon">
+                    <img src="./images/m2.png" alt="" />
+                  </div>
+
+                  <h4 class="our-plus__blocks-title">Говоримо простою мовою</h4>
+
+                  <p class="our-plus__blocks-subtitle">
+                    Ми не ховаємося за складними термінами. Ви завжди
+                    розумітимете, що ми робимо, навіщо і який це дає ефект.
+                  </p>
+                </div>
+
+                <div class="our-plus__blocks-item">
+                  <div class="our-plus__blocks-icon">
+                    <img src="./images/m3.png" alt="" />
+                  </div>
+
+                  <h4 class="our-plus__blocks-title">
+                    Беремо на себе відповідальність
+                  </h4>
+
+                  <p class="our-plus__blocks-subtitle">
+                    Обіцяємо лише те, що можемо виконати. Якщо виникають
+                    труднощі — шукаємо рішення, а не виправдання.
+                  </p>
+                </div>
+
+                <div class="our-plus__blocks-item">
+                  <div class="our-plus__blocks-icon">
+                    <img src="./images/m4.png" alt="" />
+                  </div>
+
+                  <h4 class="our-plus__blocks-title">
+                    Цінуємо довгу співпрацю
+                  </h4>
+
+                  <p class="our-plus__blocks-subtitle">
+                    Для нас важливо не просто зробити сайт і попрощатися. Ми
+                    залишаємося поруч, допомагаємо розвивати й оновлювати ваш
+                    онлайн-бізнес.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="team-user">
+          <div class="container">
+            <div class="team-user__inner">
+              <div class="top--title">
+                <h2 class="karaoke">
+                  <span
+                    >Наша <br />
+                    команда</span
+                  >
+                </h2>
+              </div>
+
+              <div class="team-user__blocks">
+                <div class="team-user__blocks-user">
+                  <div class="team-user__blocks-img">
+                    <img src="./images/u1.png" alt="" />
+
+                    <h4 class="team-user__blocks-name">Ачі Б.</h4>
+                    <span class="team-user__blocks-dev"
+                      >WordPress developer / OpenCard</span
+                    >
+                  </div>
+                </div>
+
+                <div class="team-user__blocks-user">
+                  <div class="team-user__blocks-img">
+                    <img src="./images/u2.png" alt="" />
+
+                    <h4 class="team-user__blocks-name">Юлія В.</h4>
+                    <span class="team-user__blocks-dev">UX/UI Design</span>
+                  </div>
+                </div>
+
+                <div class="team-user__blocks-user">
+                  <div class="team-user__blocks-img">
+                    <img src="./images/u3.png" alt="" />
+
+                    <h4 class="team-user__blocks-name">Артур А.</h4>
+                    <span class="team-user__blocks-dev"
+                      >Прибиральник студії</span
+                    >
+                  </div>
+                </div>
+
+                <div class="team-user__blocks-user">
+                  <div class="team-user__blocks-img">
+                    <img src="./images/u4.png" alt="" />
+
+                    <h4 class="team-user__blocks-name">Влад Л.</h4>
+                    <span class="team-user__blocks-dev"
+                      >Back-end devel;oper</span
+                    >
+                  </div>
+                </div>
+
+                <div class="team-user__blocks-user">
+                  <div class="team-user__blocks-img">
+                    <img src="./images/u5.png" alt="" />
+
+                    <h4 class="team-user__blocks-name">Армен Б.</h4>
+                    <span class="team-user__blocks-dev">Python developer</span>
+                  </div>
+                </div>
+
+                <div class="team-user__blocks-user">
+                  <div class="team-user__blocks-img">
+                    <img src="./images/u6.png" alt="" />
+
+                    <h4 class="team-user__blocks-name">Олексій Є</h4>
+                    <span class="team-user__blocks-dev"
+                      >Front-end developer</span
+                    >
+                  </div>
+                </div>
+
+                <div class="team-user__blocks-user">
+                  <div class="team-user__blocks-img">
+                    <img src="./images/u17.png" alt="" />
+
+                    <h4 class="team-user__blocks-name">Мар’яна Б.</h4>
+                    <span class="team-user__blocks-dev">Project manager</span>
+                  </div>
+                </div>
+
+                <div class="team-user__blocks-user">
+                  <div class="team-user__blocks-img">
+                    <img src="./images/u8.png" alt="" />
+
+                    <h4 class="team-user__blocks-name">Ілля Л.</h4>
+                    <span class="team-user__blocks-dev">Swift developer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="form">
+          <div class="container">
+            <div class="form__inner">
+              <div class="form__content">
+                <p class="form__content-subtitle">МИ ЗАВЖДИ НА ЗВ’ЯЗКУ</p>
+                <h2 class="form__content-title">
+                  отримай <br />
+                  безкоштовну <br /><span>консультацію</span>
+                </h2>
+
+                <div class="form__content_list">
+                  <div class="form__content_list-item">
+                    <div class="form__content_list-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="21"
+                        viewBox="0 0 22 21"
+                        fill="none"
+                      >
+                        <path
+                          d="M21.6235 7.47946L11.4696 0.812973C11.3306 0.721609 11.1672 0.672852 11 0.672852C10.8328 0.672852 10.6694 0.721609 10.5304 0.812973L0.376539 7.47946C0.260627 7.55562 0.165608 7.65879 0.09992 7.77981C0.0342324 7.90084 -9.03258e-05 8.03596 1.78522e-07 8.17319V19.0062C1.78522e-07 19.4482 0.178296 19.8722 0.495666 20.1847C0.813035 20.4973 1.24348 20.6729 1.69231 20.6729H20.3077C20.7565 20.6729 21.187 20.4973 21.5043 20.1847C21.8217 19.8722 22 19.4482 22 19.0062V8.17319C22.0001 8.03596 21.9658 7.90084 21.9001 7.77981C21.8344 7.65879 21.7394 7.55562 21.6235 7.47946ZM11 2.50772L19.6636 8.19611L12.577 13.1731H9.4251L2.33856 8.19611L11 2.50772ZM1.69231 19.0062V9.79085L8.6625 14.6866C8.80601 14.7875 8.97797 14.8418 9.15433 14.8418H12.8457C13.022 14.8418 13.194 14.7875 13.3375 14.6866L20.3077 9.79085V19.0062H1.69231Z"
+                          fill="white"
+                        />
+                      </svg>
                     </div>
 
-                    <div class="end">
-                      <div class="top">
-                        <h4 class="user-form__me-name">Владислав</h4>
-                        <span class="user-form__me-work">web-розробник</span>
-                      </div>
+                    <div class="form__content_list_info">
+                      <p class="form__content_list_info-muted">Пошта</p>
+                      <a href="#!" class="form__content_list_info-link"
+                        >ube.studio@gmail.com</a
+                      >
+                    </div>
+                  </div>
 
-                      <div class="bottom">
-                        <a href="#!" class="user-form__me-gmail"
-                          >ube.studio@gmail.com</a
-                        >
-                        <a href="#!" class="user-form__me-phone"
-                          >+38 (063) 466 - 90 - 18</a
-                        >
+                  <div class="form__content_list-item">
+                    <div class="form__content_list-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23"
+                        height="24"
+                        viewBox="0 0 23 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M21.8927 16.1357L16.475 13.708L16.4601 13.7011C16.1788 13.5808 15.872 13.5325 15.5674 13.5606C15.2628 13.5887 14.97 13.6924 14.7155 13.8621C14.6856 13.8819 14.6568 13.9034 14.6293 13.9265L11.8301 16.3128C10.0568 15.4514 8.22602 13.6344 7.36466 11.8841L9.75438 9.0424C9.77738 9.01365 9.79923 8.9849 9.81993 8.95385C9.98602 8.70004 10.0868 8.40911 10.1133 8.10695C10.1398 7.80479 10.0911 7.50076 9.97173 7.22193V7.20813L7.53716 1.78123C7.37931 1.41698 7.10789 1.11355 6.76342 0.916235C6.41895 0.71892 6.0199 0.638304 5.62585 0.686419C4.06755 0.891474 2.63719 1.65676 1.60189 2.83935C0.566605 4.02194 -0.00280709 5.54095 1.0406e-05 7.11268C1.0406e-05 16.2438 7.42906 23.6728 16.5601 23.6728C18.1319 23.6757 19.6509 23.1062 20.8334 22.071C22.016 21.0357 22.7813 19.6053 22.9864 18.047C23.0346 17.6531 22.9541 17.2541 22.757 16.9097C22.5599 16.5652 22.2567 16.2937 21.8927 16.1357ZM16.5601 21.8328C12.6574 21.8286 8.91578 20.2763 6.15615 17.5167C3.39652 14.757 1.84428 11.0154 1.84002 7.11268C1.8357 5.98968 2.24028 4.9035 2.97823 4.05699C3.71617 3.21048 4.73701 2.66152 5.8501 2.51264C5.84965 2.51723 5.84965 2.52185 5.8501 2.52644L8.26512 7.93149L5.88805 10.7766C5.86392 10.8044 5.84201 10.834 5.8225 10.8652C5.64944 11.1307 5.54792 11.4365 5.52777 11.7528C5.50762 12.0691 5.56953 12.3853 5.7075 12.6707C6.74941 14.8017 8.89647 16.9326 11.0504 17.9734C11.3379 18.1101 11.6559 18.1698 11.9734 18.1469C12.2908 18.1239 12.5969 18.0189 12.8617 17.8423C12.8912 17.8224 12.9196 17.8009 12.9468 17.7779L15.7425 15.3928L21.1475 17.8135C21.1475 17.8135 21.1567 17.8135 21.1602 17.8135C21.0131 18.9282 20.465 19.9511 19.6183 20.6909C18.7716 21.4306 17.6844 21.8366 16.5601 21.8328Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
 
-                        <ul class="list-reset header__social">
-                          <li class="header__social-item">
-                            <a href="#!" class="header__social-link">
-                              <i class="fa-brands fa-telegram"></i>
-                            </a>
-                          </li>
-
-                          <li class="header__social-item">
-                            <a href="#!" class="header__social-link">
-                              <i class="fa-brands fa-whatsapp"></i>
-                            </a>
-                          </li>
-
-                          <li class="header__social-item">
-                            <a href="#!" class="header__social-link">
-                              <i class="fa-brands fa-viber"></i>
-                            </a>
-                          </li>
-
-                          <li class="header__social-item">
-                            <a href="#!" class="header__social-link">
-                              <i class="fa-brands fa-viber"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                    <div class="form__content_list_info">
+                      <p class="form__content_list_info-muted">
+                        Номер телефону
+                      </p>
+                      <a href="#!" class="form__content_list_info-link"
+                        >+38 (063) 466-90-18</a
+                      >
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="end end-form">
-                <h2 class="user-form__title">Виберіть послугу</h2>
+              <div class="form-input">
+                <form action="">
+                  <div class="form-input__input">
+                    <span class="form-input__input-name">Ім’я *</span>
+                    <input
+                      type="text"
+                      class="input-reset"
+                      placeholder="Іван Руденко"
+                    />
+                  </div>
 
-                <form action="" class="user-form">
-                  <span class="user-form--title">Сайт</span>
+                  <div class="form-input__input">
+                    <span class="form-input__input-name">Номер телефону *</span>
+                    <input
+                      type="number"
+                      class="input-reset"
+                      placeholder="+38 (063) XXX-XX-XX"
+                    />
+                  </div>
 
-                  <ul class="user-form__list list-reset">
-                    <li class="user-form__list-item">
-                      <button class="btn-reset user-form__list-btn">
-                        Інтернет-магазин
-                      </button>
-                    </li>
+                  <div class="form-input__input">
+                    <span class="form-input__input-name"
+                      >Який сайт вам потрібен</span
+                    >
 
-                    <li class="user-form__list-item">
-                      <button class="btn-reset user-form__list-btn">
-                        Лендінг
-                      </button>
-                    </li>
-
-                    <li class="user-form__list-item">
-                      <button class="btn-reset user-form__list-btn">
-                        Сайт-візитка
-                      </button>
-                    </li>
-
-                    <li class="user-form__list-item">
-                      <button class="btn-reset user-form__list-btn">
-                        Корпоративний сайт
-                      </button>
-                    </li>
-
-                    <li class="user-form__list-item">
-                      <button class="btn-reset user-form__list-btn">
-                        Мобільний додаток
-                      </button>
-                    </li>
-                  </ul>
-
-                  <span class="user-form--title">Дизайн</span>
-
-                  <ul class="user-form__list list-reset">
-                    <li class="user-form__list-item">
-                      <button class="btn-reset user-form__list-btn">
-                        UI/UX дизайн
-                      </button>
-                    </li>
-
-                    <li class="user-form__list-item">
-                      <button class="btn-reset user-form__list-btn">
-                        UX аудит
-                      </button>
-                    </li>
-
-                    <li class="user-form__list-item">
-                      <button class="btn-reset user-form__list-btn">
-                        web-дизайн
-                      </button>
-                    </li>
-
-                    <li class="user-form__list-item">
-                      <button class="btn-reset user-form__list-btn">
-                        моб-дизайн
-                      </button>
-                    </li>
-                  </ul>
-
-                  <span class="user-form--title">Приблизний бюджет</span>
-
-                  <ul class="user-form__list list-reset">
-                    <li class="user-form__list-item">
-                      <button class="btn-reset user-form__list-btn">
-                        500$ - 800$
-                      </button>
-                    </li>
-
-                    <li class="user-form__list-item">
-                      <button class="btn-reset user-form__list-btn">
-                        1000$ - 2500$
-                      </button>
-                    </li>
-
-                    <li class="user-form__list-item">
-                      <button class="btn-reset user-form__list-btn">
-                        2500$ - 4000$
-                      </button>
-                    </li>
-
-                    <li class="user-form__list-item">
-                      <button class="btn-reset user-form__list-btn">
-                        8000$ - 12000$
-                      </button>
-                    </li>
-                  </ul>
-
-                  <div class="inpt">
-                    <h4 class="inpt__title">ваші контактні дані</h4>
-
-                    <div class="inpt__blocks">
-                      <div class="inpt__input">
-                        <span class="inpt__input-title"
-                          >І’мя / Назва компанії *</span
-                        >
-                        <input
-                          type="text"
-                          class="input-reset"
-                          placeholder="І’мя / Назва компанії"
-                        />
+                    <div class="inps">
+                      <div class="form-input__input-site">
+                        <div class="start form-input__input-name">
+                          Інтернет-магазин
+                        </div>
+                        <div class="end">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="8"
+                            viewBox="0 0 15 8"
+                            fill="none"
+                          >
+                            <path
+                              d="M6.7998 6.90914L0.436481 1.07645C0.377359 1.02226 0.330462 0.957928 0.298465 0.887123C0.266469 0.816319 0.25 0.74043 0.25 0.663792C0.25 0.587154 0.266469 0.511265 0.298465 0.440461C0.330462 0.369656 0.377359 0.305321 0.436481 0.25113C0.495602 0.196938 0.56579 0.153951 0.643036 0.124623C0.720283 0.0952944 0.803075 0.0801996 0.886685 0.0801996C0.970296 0.0801996 1.05309 0.0952944 1.13033 0.124623C1.20758 0.153951 1.27777 0.196938 1.33689 0.25113L7.25 5.67188L13.1631 0.25113C13.2825 0.141685 13.4445 0.0802002 13.6133 0.0802002C13.7822 0.0802002 13.9441 0.141685 14.0635 0.25113C14.1829 0.360575 14.25 0.509014 14.25 0.663793C14.25 0.818571 14.1829 0.96701 14.0635 1.07646L7.7002 6.90914C7.64111 6.96337 7.57093 7.00639 7.49368 7.03574C7.41643 7.06509 7.33362 7.0802 7.25 7.0802C7.16638 7.0802 7.08357 7.06509 7.00632 7.03574C6.92907 7.00639 6.85889 6.96337 6.7998 6.90914Z"
+                              fill="black"
+                            />
+                          </svg>
+                        </div>
                       </div>
 
-                      <div class="inpt__input">
-                        <span class="inpt__input-title">Номер телефону *</span>
-                        <input
-                          type="text"
-                          class="input-reset"
-                          placeholder="+38 (063) XXX - XX - XX"
-                        />
-                      </div>
-                    </div>
+                      <div class="form-input__input_dropdown list-reset">
+                        <li class="form-input__input_dropdown-item">
+                          <button
+                            class="btn-reset form-input__input_dropdown-btn"
+                          >
+                            Інтернет-магазин
+                          </button>
+                        </li>
 
-                    <div class="inpt__block">
-                      <textarea
-                        name=""
-                        id=""
-                        placeholder="Повідомлення"
-                        class="input-reset"
-                      ></textarea>
+                        <li class="form-input__input_dropdown-item">
+                          <button
+                            class="btn-reset form-input__input_dropdown-btn"
+                          >
+                            Корпоративний сайт
+                          </button>
+                        </li>
+
+                        <li class="form-input__input_dropdown-item">
+                          <button
+                            class="btn-reset form-input__input_dropdown-btn"
+                          >
+                            Лендінг
+                          </button>
+                        </li>
+                      </div>
                     </div>
                   </div>
 
-                  <button type="submit" class="btn-reset btn-send-user-form">
-                    Відправити запит
+                  <div class="form-input__input">
+                    <span class="form-input__input-name"
+                      >Розкажіть який сайт вам потрібен *</span
+                    >
+                    <textarea
+                      type="number"
+                      class="input-reset"
+                      placeholder="Не обов’язково..."
+                    ></textarea>
+                  </div>
 
-                    <span>
+                  <button class="btn-reset form-input__btn">
+                    <span>Відправити</span>
+                    <span class="circle">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="10"
@@ -849,9 +1009,109 @@
       </div>
     </div>
 
-    <!-- GSAP + ScrollTrigger -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js" defer></script>
     <script src="./js/menu.js" defer></script>
+    <script src="./js/animation.js" defer></script>
     <script src="./js/preloader.js" defer></script>
+    <script src="./js/portfolio.js" defer></script>
+    <script src="./js/swiper-min.js"></script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.utils.toArray(".our-plus__blocks-item").forEach((item) => {
+        const icon = item.querySelector(".our-plus__blocks-icon img");
+        const title = item.querySelector(".our-plus__blocks-title");
+        const subtitle = item.querySelector(".our-plus__blocks-subtitle");
+
+        // Таймлайн для блока
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: item,
+            start: "top 90%", // когда верх блока достигнет 90% экрана
+            toggleActions: "play none none none",
+          },
+        });
+
+        // Сначала сам блок появляется снизу с прозрачности
+        tl.fromTo(
+          item,
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }
+        );
+
+        // Затем иконка
+        tl.fromTo(
+          icon,
+          { opacity: 0, scale: 0.8 },
+          { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.7)" },
+          "-=0.3" // небольшое перекрытие с блоком
+        );
+
+        // Заголовок и текст
+        tl.fromTo(
+          [title, subtitle],
+          { opacity: 0 },
+          { opacity: 1, duration: 0.6, stagger: 0.2, ease: "power2.out" },
+          "-=0.4"
+        );
+      });
+    </script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.utils.toArray(".team-user__blocks-user").forEach((item) => {
+        const img = item.querySelector("img");
+        const name = item.querySelector(".team-user__blocks-name");
+        const dev = item.querySelector(".team-user__blocks-dev");
+
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: item,
+            start: "top 90%", // когда блок появляется в зоне видимости
+            toggleActions: "play none none none",
+          },
+        });
+
+        // Блок появляется снизу с прозрачности
+        tl.fromTo(
+          item,
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }
+        );
+
+        // Изображение с небольшим pop
+        tl.fromTo(
+          img,
+          { opacity: 0, scale: 0.8 },
+          { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.7)" },
+          "-=0.3"
+        );
+
+        // Имя и должность
+        tl.fromTo(
+          [name, dev],
+          { opacity: 0 },
+          { opacity: 1, duration: 0.6, stagger: 0.2, ease: "power2.out" },
+          "-=0.4"
+        );
+      });
+    </script>
   </body>
 </html>

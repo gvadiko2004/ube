@@ -1,0 +1,44 @@
+.team {
+  margin-top: 150px;
+
+  @media (max-width: 440px) {
+    margin-top: 40px;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+
+    color: #fff;
+    font-family: "Unbounded";
+    font-size: clamp(1.75rem, 1.2rem + 2vw, 3rem);
+    font-weight: 300;
+    line-height: 124%;
+
+    max-width: 1080px;
+  }
+
+  .img-container {
+    border-radius: 32px;
+    overflow: hidden;
+    @media (max-width: 440px) {
+      border-radius: 10px;
+    }
+  }
+
+  .karaoke {
+    span {
+    }
+  }
+
+  &__img {
+    display: block;
+    margin-top: 32px;
+    border-radius: 24px;
+    overflow: hidden;
+
+    @media (max-width: 1440px) {
+      border-radius: 14px;
+      margin-top: 2px;
+    }
+  }
+}

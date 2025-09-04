@@ -26,35 +26,29 @@ blocks.forEach((block) => {
   });
 });
 
+
+
+
+
+
 const spans = document.querySelectorAll(".karaoke span");
 
-// Для каждого заголовка своё состояние
-const states = Array.from(spans).map(() => ({
-  current: 0,
-}));
-
-const speed = 0.08; // уменьшили скорость для более “инерционной” заливки
-const offset = 0.01; // начинать чуть раньше
+const offset = 0.01; // небольшая поправка, если нужно
 
 function animate() {
-  spans.forEach((span, i) => {
+  spans.forEach((span) => {
     const rect = span.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
     if (rect.top < windowHeight && rect.bottom > 0) {
-      // Прогресс появления элемента в зоне видимости
+      // Прогресс появления элемента в зоне видимости (0–1)
       let t = (windowHeight - rect.top) / (windowHeight + rect.height);
       t = Math.min(Math.max(t + offset, 0), 1);
 
       const spanWidth = span.offsetWidth;
-      const maxShift = spanWidth;
 
-      // Заливка слева направо
-      const target = t * maxShift;
-
-      // Интенсивная плавность: current догоняет target постепенно
-      states[i].current += (target - states[i].current) * speed;
-      span.style.backgroundPosition = `${states[i].current - spanWidth}px 0`;
+      // Заливка слева направо синхронно со скроллом
+      span.style.backgroundPosition = `${t * spanWidth - spanWidth}px 0`;
     }
   });
 

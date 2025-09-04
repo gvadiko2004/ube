@@ -79,13 +79,13 @@ main {
 // Custom
 
 .container {
-  max-width: 1960px;
+  max-width: 1480px;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
 
   @media (max-width: 440px) {
-    // padding: 0 12px;
+    padding: 0 12px;
   }
 }
 

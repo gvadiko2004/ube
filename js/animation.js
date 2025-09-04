@@ -1,15 +1,15 @@
+// --- ПАРАЛЛАКС ---
+const parallaxImages = document.querySelectorAll(".parallax-img");
+if (parallaxImages.length) {
+  new simpleParallax(parallaxImages, {
+    scale: 1.2,
+    delay: 3.2,
+    orientation: "up",
+  });
+}
+
 window.addEventListener("load", () => {
   setTimeout(() => {
-    // --- ПАРАЛЛАКС ---
-    const parallaxImages = document.querySelectorAll(".parallax-img");
-    if (parallaxImages.length) {
-      new simpleParallax(parallaxImages, {
-        scale: 1.2,
-        delay: 3.2,
-        orientation: "up",
-      });
-    }
-
     // --- HEADER ---
     // const header = document.querySelector(".header");
     // if (header) {
@@ -117,6 +117,7 @@ window.addEventListener("load", () => {
 
     // --- YEAR ---
     const yearItems = document.querySelectorAll(".year__content-item");
+
     yearItems.forEach((item) => {
       const top = item.querySelector(".top span");
       const bottom = item.querySelector(".bottom p");
@@ -130,34 +131,52 @@ window.addEventListener("load", () => {
         },
       });
 
+      // Анимация появления всего item
+      tl.from(
+        item,
+        {
+          opacity: 0,
+          y: 40,
+          duration: 0.6,
+          ease: "power3.out",
+        },
+        "start"
+      ); // метка "start"
+
       // Анимация цифр
       if (top) {
         const value = parseInt(top.textContent.replace(/\D/g, "")) || null;
         if (value !== null && value > 0) {
           const obj = { val: 0 };
-          tl.to(obj, {
-            val: value,
-            duration: 1.2,
-            ease: "power1.out",
-            onUpdate: () => {
-              top.textContent = Math.floor(obj.val);
+          tl.to(
+            obj,
+            {
+              val: value,
+              duration: 1.2,
+              ease: "power1.out",
+              onUpdate: () => {
+                top.textContent = Math.floor(obj.val);
+              },
             },
-          });
+            "start"
+          ); // запускаем в тот же момент
         } else {
           tl.fromTo(
             top,
             { opacity: 0, y: 20 },
-            { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }
+            { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" },
+            "start"
           );
         }
       }
 
-      // Анимация текста bottom (целиком)
+      // Анимация текста bottom
       if (bottom) {
         tl.fromTo(
           bottom,
           { opacity: 0, y: 20 },
-          { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }
+          { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" },
+          "start"
         );
       }
     });
@@ -218,6 +237,54 @@ window.addEventListener("load", () => {
           },
         }
       );
+    });
+
+    // Плавное появление всех элементов поочередно
+    gsap.to(".team__inner > *", {
+      opacity: 1, // конечное состояние — полностью видимые
+      duration: 1, // длительность анимации
+      ease: "power2.out",
+      stagger: 0.3, // поочередное появление
+      scrollTrigger: {
+        trigger: ".team", // блок, который запускает анимацию
+        start: "top 80%", // когда верх блока достигнет 80% экрана
+        toggleActions: "play none none none", // проиграть один раз
+      },
+    });
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Анимация поочередного появления блоков
+    gsap.utils.toArray(".our-plus__blocks-item").forEach((item, i) => {
+      const icon = item.querySelector(".our-plus__blocks-icon img");
+      const title = item.querySelector(".our-plus__blocks-title");
+      const subtitle = item.querySelector(".our-plus__blocks-subtitle");
+
+      // Анимация иконки
+      gsap.to(icon, {
+        opacity: 1,
+        scale: 1,
+        duration: 0.8,
+        ease: "back.out(1.7)",
+        scrollTrigger: {
+          trigger: item,
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
+      });
+
+      // Анимация заголовка и текста
+      gsap.to([title, subtitle], {
+        opacity: 1,
+        duration: 0.8,
+        ease: "power2.out",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: item,
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
+      });
     });
   }, 200);
 });
