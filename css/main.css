@@ -152,6 +152,13 @@ span {
   background-color: transparent;
 }
 
+body {
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  user-select: none; /* Стандарт */
+}
+
 .upload-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -736,10 +743,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 40px;
+  gap: 80px;
   margin-bottom: 52px;
   padding-bottom: 52px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.231372549);
@@ -883,7 +887,7 @@ section {
 }
 @media (max-width: 1440px) {
   .hero {
-    height: 900px;
+    height: 780px;
   }
 }
 @media (max-width: 1280px) {
@@ -893,10 +897,11 @@ section {
 }
 @media (max-width: 1080px) {
   .hero {
-    height: 700px;
+    height: 560px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-top: 0;
   }
 }
 @media (max-width: 768px) {
@@ -993,15 +998,10 @@ section {
 .hero__title {
   color: #fff;
   font-family: "Unbounded";
-  font-size: clamp(2.625rem, 0.975rem + 6vw, 6.375rem);
   font-weight: 300;
   text-transform: uppercase;
   line-height: 115%;
-}
-@media (max-width: 1440px) {
-  .hero__title {
-    font-size: clamp(2.25rem, 1.432rem + 4.09vw, 4.5rem);
-  }
+  font-size: clamp(1.875rem, 1.27rem + 2.2vw, 3.25rem);
 }
 .hero__title span {
   background: var(----gradient, linear-gradient(0deg, #75bb0d 0%, #75bb0d 100%));
@@ -1009,13 +1009,8 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Unbounded";
-  font-size: clamp(2.625rem, 0.975rem + 6vw, 6.375rem);
   font-weight: 700;
-}
-@media (max-width: 1440px) {
-  .hero__title span {
-    font-size: clamp(2.25rem, 1.432rem + 4.09vw, 4.5rem);
-  }
+  font-size: clamp(1.875rem, 1.27rem + 2.2vw, 3.25rem);
 }
 .hero__subtitle {
   color: #fff;
@@ -1150,11 +1145,12 @@ section {
 @media (max-width: 1640px) {
   .hero-bg {
     right: -10%;
+    width: 100%;
   }
 }
 @media (max-width: 1280px) {
   .hero-bg {
-    right: -6%;
+    right: -10%;
   }
 }
 @media (max-width: 1080px) {
@@ -2342,7 +2338,7 @@ section {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  padding: 20px 0;
+  padding: 0 20px;
 }
 .banner .container::before {
   position: absolute;
@@ -4107,6 +4103,14 @@ section {
   }
 }
 
+@media (min-width: 1080px) {
+  .header__list_container.seps {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .header__list_container.seps .footer-nav__list {
   padding-top: 14px;
 }

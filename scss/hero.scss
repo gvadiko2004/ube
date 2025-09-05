@@ -18,7 +18,7 @@
   margin-top: 60px;
 
   @media (max-width: 1440px) {
-    height: 900px;
+    height: 780px;
   }
 
   @media (max-width: 1280px) {
@@ -26,8 +26,9 @@
   }
 
   @media (max-width: 1080px) {
-    height: 700px;
+    height: 560px;
     justify-content: flex-start;
+    margin-top: 0;
   }
 
   @media (max-width: 768px) {
@@ -128,14 +129,24 @@
   &__title {
     color: #fff;
     font-family: "Unbounded";
-    font-size: clamp(2.625rem, 0.975rem + 6vw, 6.375rem);
+    // font-size: clamp(2.625rem, 0.975rem + 6vw, 6.375rem);
     font-weight: 300;
     text-transform: uppercase;
     line-height: 115%;
 
-    @media (max-width: 1440px) {
-      font-size: clamp(2.25rem, 1.432rem + 4.09vw, 4.5rem);
-    }
+    font-size: clamp(1.875rem, 1.27rem + 2.2vw, 3.25rem);
+
+    // @media (max-width: 1440px) {
+    //   font-size: 72px;
+    // }
+
+    // @media (max-width: 1080px) {
+    //   font-size: 52px;
+    // }
+
+    // @media (max-width: 440px) {
+    //   font-size: 36px;
+    // }
 
     span {
       background: var(
@@ -146,12 +157,22 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: "Unbounded";
-      font-size: clamp(2.625rem, 0.975rem + 6vw, 6.375rem);
+      // font-size: clamp(2.625rem, 0.975rem + 6vw, 6.375rem);
       font-weight: 700;
 
-      @media (max-width: 1440px) {
-        font-size: clamp(2.25rem, 1.432rem + 4.09vw, 4.5rem);
-      }
+      font-size: clamp(1.875rem, 1.27rem + 2.2vw, 3.25rem);
+
+      // @media (max-width: 1440px) {
+      //   font-size: clamp(2.25rem, 1.432rem + 4.09vw, 4.5rem);
+      // }
+
+      // @media (max-width: 1080px) {
+      //   font-size: 52px;
+      // }
+
+      // @media (max-width: 440px) {
+      //   font-size: 36px;
+      // }
     }
   }
 
@@ -297,10 +318,11 @@
 
   @media (max-width: 1640px) {
     right: -10%;
+    width: 100%;
   }
 
   @media (max-width: 1280px) {
-    right: -6%;
+    right: -10%;
   }
 
   @media (max-width: 1080px) {

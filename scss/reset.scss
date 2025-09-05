@@ -149,6 +149,13 @@ span {
   background-color: transparent;
 }
 
+body {
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE10+ */
+  user-select: none;         /* Стандарт */
+}
+
 // button:hover, a:hover, li {
 //   transition: 0.3s ease-in-out;
 // }

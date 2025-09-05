@@ -255,6 +255,10 @@
 }
 
 .header__list_container.seps {
+  @media (min-width: 1080px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .footer-nav__list {
     padding-top: 14px;
   }
